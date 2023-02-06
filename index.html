@@ -9,21 +9,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <title>Patrick Vicente</title>
 </head>
 <body>  
-    <header>
+    <header id="header">
         <nav class="header-nav">
             <img src="./resources/patrick-vicente-logo-bg-tangerine.png"  class="header-logo"alt="website logo">
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a id="contact-link" href="#">Contact</a></li>
             </ul>
+            <div id="contact-container">
+                <form>
+                  <input type="text" placeholder="Your name">
+                  <input type="email" placeholder="Your email">
+                  <textarea placeholder="Your message"></textarea>
+                  <button type="submit">Submit</button>
+                </form>
+            </div>
         </nav>
     </header>
     <main class="main-page">
@@ -31,7 +39,9 @@
             <p id="hello-world">Hello, World! My name is...</p>
             <h1>Patrick Vicente</h1>
             <h2>Aspiring Front-end Developer</h2>
-            <button id="about-me">About Me</button>
+            <div class="btn-updated btn-abt-me" id="about-me">
+                <a href="#about-me"><span>About Me</span></a>
+            </div>
         </div>
         <div id="experience" class="experience">
             <h2>My Experiences</h2>
@@ -60,35 +70,61 @@
                     <div class="overlay">
                         <h3>Personal Finance Tracker</h3>
                         <p>Everyday finance simplified using this web app</p>
-                        <button class="btn-project">Know More</button>
+                        <div class="btn-updated btn-project">
+                            <a href=""><span>Know More</span></a>
+                        </div>
                     </div>
                 </div>
                 <div class="projects-cards right" id="second-project">
                     <div class="overlay">
                         <h3>Complete To-do List</h3>
                         <p>Tasks reimagined with this comprehensive web app</p>
-                        <button class="btn-project">Know More</button>
+                        <div class="btn-updated btn-project">
+                            <a href=""><span>Know More</span></a>
+                        </div>
                     </div>
                 </div>
                 <div class="projects-cards left" id="third-project">
                     <div class="overlay">
                         <h3>LinkedIn Clone</h3>
                         <p>Cloning LinkedIn using react</p>
-                        <button class="btn-project">Know More</button>
+                        <div class="btn-updated btn-project">
+                            <a href=""><span>Know More</span></a>
+                        </div>
                     </div>
                 </div>
                 <div class="projects-cards right" id="fourth-project">
                     <div class="overlay">
                         <h3>Language Learning Platform</h3>
                         <p>Learning a new language has never been this fun!</p>
-                        <button class="btn-project">Know More</button>
+                        <div class="btn-updated btn-project">
+                            <a href=""><span>Know More</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main> 
     <footer>
-        <img
+        <div class="logo-container">
+            <a href="#" onclick="window.scrollTo(0, 0); return false;"><img class="footer-logo" src="./resources/patrick-vicente-logo-trnsprent-beige.png"></a>
+        </div>
+        <div class="social-footer-container">
+            <div class="social" id="linkedin">
+                <a href="https://www.linkedin.com/in/johnpatrickvicente/" target="_blank"><img src="./resources/social-linkedin.png" alt="linkedin logo"></a>
+            </div>
+            <div class="social" id="youtube">
+                <a href="https://www.youtube.com" target="_blank"><img src="./resources/social-youtube.png" alt="youtube logo"></a>
+            </div>
+            <div class="social" id="twitter">
+                <a href="https://twitter.com/iPatrickVicente" target="_blank"><img src="./resources/social-twitter.png" alt="twitter logo"></a>
+            </div>
+            <div class="social" id="github">
+                <a href="https://github.com/patrickvicente/my_portfolio.git" target="_blank"><img src="./resources/social-github.png" alt="github logo"></a>
+            </div>
+        </div>
+        <p class="footer-notes">Copyright &#169; 2023 Patrick Vicente - Trick in Tech | <a href="mailto:patrickvicentepht@gmail.com">Contact Me</a></p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

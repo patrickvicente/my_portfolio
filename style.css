@@ -7,6 +7,7 @@ html {
 body {
     width: 100%;
     margin: 0;
+    background-color: #111724;
 }
 
 header {
@@ -14,6 +15,7 @@ header {
     margin-top: 0px;
     width: 100%;
     background-color: #111724;
+    z-index: 10;
 }
 
 .header-nav {
@@ -26,6 +28,11 @@ header {
 .header-logo {
     width: 80px;
     display: flex;
+    padding-top: 10px;
+}
+
+.header-logo:hover {
+    animation: logoRotate 3s linear 0s infinite normal none;
 }
 
 .header-nav ul {
@@ -52,6 +59,10 @@ header {
     text-decoration: underline;
 }
 
+#contact-container {
+    display: none;
+}
+
 .main-page {
     padding: 100px 40px;
     background-color: #111724;
@@ -67,8 +78,20 @@ header {
     background-image: url('./resources/patrick-vicente-logo-trnsprent-blue.png');
     background-repeat: no-repeat;
     background-position: 100% 90%;
-    background-size: 500px;    
+    background-size: 500px;
+    animation: background-animation 1.5s linear 0s 1 normal none;
 }
+
+@keyframes background-animation {
+    0% {
+        opacity: 0;
+      background-position: -100% -100%;
+    }
+    100% {
+        opacity: 1;
+      background-position: 100% 90%;
+    }
+  }
 
 #hello-world {
     color: #ffa364;
@@ -92,17 +115,56 @@ header {
     font-family: 'Major Mono Display', monospace;
 }
 
-button {
+.btn {
     background-color: #af4f41;
     color: snow;
     padding: 15px;
     font-size: 1rem;
     font-family: 'Major Mono Display', monospace;
     border: none;
+    border: 2px solid #c16456;
+    transition: all .35s;
 }
 
-button:hover {
-    background-color: #c16456;
+.btn-updated a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #c16456;
+    border: 2px solid #c16456;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.btn-updated a span {
+    position: relative;
+    z-index: 3;
+}
+
+.btn-updated a:hover {
+    color: #fff;
+}
+
+.btn-updated a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #c16456;
+    transition: all .35s;
+}
+
+.btn-updated a:hover:after{
+    width: 100%;
+    color: #fff;
 }
 
 .experience {
@@ -236,3 +298,68 @@ button:hover {
     background-position: center;
     background-size: cover;
 }
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer-logo {
+    width: 125px;
+}
+
+
+.social-footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-notes {
+    Font-Family: 'Monda', Sans-Serif;
+    text-align: center;
+}
+
+.footer-notes a {
+    text-decoration: none;
+    color: #c16456;
+    transition: all .35s;
+}
+
+.footer-notes a:hover {
+    color: #ffebd2;
+}
+
+.social img {
+    width: 50px;
+    padding: 15px;
+    transition: all 250ms ease-out 25ms;
+}
+
+.social img:hover {
+    width: 75px;
+}
+
+#linkedin {
+    
+}
+
+#codepen {
+
+}
+
+#twitter {
+
+}
+
+#github {
+
+}
+
+@keyframes logoRotate{
+    0% {
+        transform:  rotate(360deg);
+    }
+    100% {
+    }
