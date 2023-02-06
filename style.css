@@ -1,0 +1,238 @@
+html {
+    font-size: 16px;
+    font-family: 'Major Mono Display', monospace;
+    color: #ffebd2;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    margin-top: 0px;
+    width: 100%;
+    background-color: #111724;
+}
+
+.header-nav {
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.header-logo {
+    width: 80px;
+    display: flex;
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav li {
+    display: inline;
+    margin: 0 10px;
+    position: relative;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #ffebd2;
+}
+
+.header-nav a:hover {
+    text-decoration: none;
+    color: #ffebd2;
+    opacity: 80%;
+    text-decoration: underline;
+}
+
+.main-page {
+    padding: 100px 40px;
+    background-color: #111724;
+}
+
+.hero-banner {
+    margin: 0px auto;
+    max-width: 1000px;
+    display: block;
+    align-content: center;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    background-image: url('./resources/patrick-vicente-logo-trnsprent-blue.png');
+    background-repeat: no-repeat;
+    background-position: 100% 90%;
+    background-size: 500px;    
+}
+
+#hello-world {
+    color: #ffa364;
+    margin-bottom: 0;
+}
+
+.hero-banner h1 {
+    font-size: 6rem;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: #ffebd2;
+    font-family: 'Major Mono Display', monospace;
+}
+
+.hero-banner h2 {
+    font-size: 1.5rem;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    opacity: 80%;
+    color: #ffebd2;
+    font-family: 'Major Mono Display', monospace;
+}
+
+button {
+    background-color: #af4f41;
+    color: snow;
+    padding: 15px;
+    font-size: 1rem;
+    font-family: 'Major Mono Display', monospace;
+    border: none;
+}
+
+button:hover {
+    background-color: #c16456;
+}
+
+.experience {
+    margin: 0px auto;
+    max-width: 1000px;
+    height: auto;
+    padding: 100px 0px;
+}
+
+.experience h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+}
+
+.experience-card {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #af4f41;
+}
+
+.experience-card h3 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.5rem;
+}
+
+.experience-card p {
+    Font-Family: 'Monda', Sans-Serif;
+}
+
+.experience-card span {
+    Font-Family: 'Monda', Sans-Serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.projects {
+    margin: 150px auto;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 100px;
+}
+
+.projects-cards {
+    width: 1000px;
+    height: 500px;
+    margin: 50px 100px;
+    position: relative;
+    box-shadow: 24px 34px 30px -4px 
+                rgba(150, 150, 150, 0.24)
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 50px;
+  }
+
+.projects-cards h3 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.projects-cards p {
+    Font-Family: 'Monda', Sans-Serif;
+    margin-top: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#first-project {
+    background-image: url('./resources/aidan-hancock-dA0SA67EgOQ-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#second-project {
+    background-image: url('./resources/alex-knight-2EJCSULRwC8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#third-project {
+    background-image: url('./resources/ilya-pavlov-OqtafYT5kTw-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#fourth-project {
+    background-image: url('./resources/marvin-meyer-SYTO3xs06fU-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
