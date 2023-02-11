@@ -12,35 +12,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <title>Patrick Vicente</title>
+    <title>Patrick Vicente - Trick in Tech</title>
 </head>
 <body>  
     <header id="header">
         <nav class="header-nav">
             <img src="./resources/patrick-vicente-logo-bg-tangerine.png"  class="header-logo"alt="website logo">
             <ul>
-                <li><a href="#about">About Me</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a id="contact-link" href="#">Contact</a></li>
             </ul>
+        </nav>
+        <div id="about-me-contact" class="contact-visible">
+            <div id="about-me-container">
+                <h2>About Me</h2>
+                <p>Responsive Front-end Developer</p>
+                <h4>My name is Patrick, a 27 year-old <strong>Freelance Front-end Devloper based in Dubai.</strong> I'm a curious guy who has a passion in solving complex issues.</h4>
+                <h4>When I am not coding or programming, I am working as an Institutional Sales Maanager for a Tier-1 Cryptocurrency Exchange. I enjoy talking and meeting builders and entrepreneurs in the Cryptocurrency and Tech space.</h4>
+            </div>
             <div id="contact-container">
+                <h2>Talk to Me</h2>
+                <p>Let's chat about your project and see how we can collaborate.</p>
                 <form>
-                  <input type="text" placeholder="Your name">
-                  <input type="email" placeholder="Your email">
-                  <textarea placeholder="Your message"></textarea>
-                  <button type="submit">Submit</button>
+                    <label for="contact-name">Name  *</label>
+                    <br>
+                    <input type="text" name="contact-name" id="contact-name" placeholder="Your Name" required>
+                    <br>
+                    <label for="contact-email">Email *</label>
+                    <br>
+                    <input type="email" id="contact-email" name="contact-email" placeholder="Your Email" required>
+                    <br>
+                    <label for="contact-message">Message *</label>
+                    <br>
+                    <textarea id="contact-message" name="contact-message" placeholder="Your message"></textarea>
+                    <br>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
-        </nav>
+        </div>
     </header>
     <main class="main-page">
         <div class="hero-banner">
             <p id="hello-world">Hello, World! My name is...</p>
             <h1>Patrick Vicente</h1>
             <h2>Aspiring Front-end Developer</h2>
-            <div class="btn-updated btn-abt-me" id="about-me">
-                <a href="#about-me"><span>About Me</span></a>
+            <div class="btn-updated">
+                <a href="#about-me" id="btn-about-me"><span>About Me</span></a>
             </div>
         </div>
         <div id="experience" class="experience">

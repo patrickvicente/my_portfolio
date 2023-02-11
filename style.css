@@ -59,8 +59,64 @@ header {
     text-decoration: underline;
 }
 
+#about-me-contact {
+    display: none; /* initially hide the container */
+    position: fixed; /* set the position to fixed to allow for the container to remain in the center of the page */
+    top: 50%; /* position the container in the center of the page vertically */
+    left: 50%; /* position the container in the center of the page horizontally */
+    transform: translate(-50%, -50%); /* adjust the position of the container so it's truly centered */
+    width: 80%; /* set the width to 100% to fill the full width of the parent element */
+    z-index: 5; /* set the z-index to 5 to ensure the container appears above other elements */
+}
+
+#about-me-container, #contact-container {
+    display: inline-block; /* display the two divs side by side */
+    width: 50%; /* set the width to 49% each */
+    height: 500px;
+    margin: 0;
+    vertical-align: top; /* align the divs vertically at the top */
+    padding: 0; /* remove any paddings */
+    box-sizing: border-box; /* include the border and padding in the width and height of the divs */
+    padding: 30px;
+    box-shadow: 0px 0px 47px 28px rgba(150, 150, 150, 0.24)
+}
+
+#about-me-container {
+    background-color: #ffebd2;
+    color: #273248;
+    font-Family: 'Monda', Sans-Serif;
+    animation: toggle-animation-left 300ms ease-in; /* add a transition effect with a duration of 1 second and linear timing function /
+    animation-fill-mode: forwards; / keep the end state of the animation */
+}
+    
 #contact-container {
-    display: none;
+    background-color: #273248;
+    color: #ffebd2;
+    font-Family: 'Monda', Sans-Serif;
+    animation: toggle-animation-right 300ms ease-in; /* add a transition effect with a duration of 1 second and linear timing function /
+    animation-fill-mode: forwards; / keep the end state of the animation */
+}
+    
+@keyframes toggle-animation-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+    
+@keyframes toggle-animation-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 
 .main-page {
@@ -85,11 +141,11 @@ header {
 @keyframes background-animation {
     0% {
         opacity: 0;
-      background-position: -100% -100%;
+        background-position: -100% -100%;
     }
     100% {
         opacity: 1;
-      background-position: 100% 90%;
+        background-position: 100% 90%;
     }
   }
 
